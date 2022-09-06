@@ -1,0 +1,304 @@
+.dash-container{
+    width: 850px;
+    margin: auto 35px;display: flex; flex-direction: column;
+
+    .top-wallet{
+        width: 243px;
+    height: 44px;
+        background: linear-gradient(180deg, #6E7198 0%, #60648B 100%);
+    border-radius: 16px;
+    margin:33px 25px 33px auto;
+    float: right;
+    padding:10px;
+      cursor: pointer;
+    &:hover{
+      background: #6671ff;
+  }
+
+  &:active{
+    background: #494d9c;
+  }
+    }
+    .notify-dash{
+        background: #7366FE;
+border-radius: 16px;
+width: 44px;
+height: 44px;
+padding: 10px;
+&:hover{
+    background-color: #6671ff;
+}
+
+&:active{
+  background-color: #494d9c;
+}
+    }
+    .game-pool{
+        margin:50px 25px ;
+        .underline{
+            width: 900px;
+            height: 1px;
+            margin: 16px auto;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+    .carousel-btn{
+      margin-left:25px ;
+      width: 101px;
+    height: 40px;
+    padding: 8px 24px;
+    border-radius: 12px;
+    background-color: #30af9a;
+    border: none;
+    &:hover{
+      background-color: #32d4aa;
+     
+  }
+  &:hover div {
+      display:none
+    }
+  &:hover span {
+      display:none
+    }
+  &:hover:before {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.27px;
+      text-align: center;
+      content:"Join";
+    }
+  &:active{
+    background-color: #0d9a76;
+  }
+  }
+    .view-btn{
+      width: 100px;
+height: 40px;
+padding: 5px 30px;
+      border: 2px solid #30AF9A;
+box-sizing: border-box;
+border-radius: 12px;
+.view-span{
+  color: #30AF9A;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+&:hover{
+color: #32d4aa;
+}
+&:active{
+color: #0d9a76;
+}
+}
+&:hover{
+  border: 2px solid #32d4aa;
+}
+&:active{
+  border: 2px solid #0d9a76;
+}
+}
+}
+
+.chip-container {
+    .chip {
+      width: 136px;
+      height: 36px;
+      box-sizing: border-box;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #7366FE;
+      color: #7366FE;
+      cursor: pointer;
+
+      span {
+
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #7366FE;
+      }
+
+      &.selected {
+        background: #7366FE;
+
+        span {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .tournament-card-container{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .tournament-card {
+    padding: 15px;
+    height: 126px;
+    border-bottom: 1px solid #DDDDDD;
+    -webkit-backdrop-filter: blur(64px);
+    backdrop-filter: blur(64px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    &:last-child {
+      border-bottom: none;
+    }
+  
+    span {
+      font-family: Oxanium;
+    }
+  
+    .button-container {
+      .button {
+        width: auto;
+        height: 46px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 6px;
+        border-image-source: linear-gradient(to bottom, #d789fc 0%, #8525ed 100%);
+        border-image-slice: 1;
+        background-image: linear-gradient(to bottom, #a658f2, #a658f2), linear-gradient(to bottom, #d789fc 0%, #8525ed 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        color: #fff;
+  
+      .view {
+        width: 65px;
+        height: 43px;
+      }
+    }
+  }
+  }
+.text-line {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.iconography-margin {
+  align-items: flex-start;
+  display: flex;
+  height: 16px;
+  min-width: 16px;
+  padding: 0.5px;
+}
+
+.winrate {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/624ff3e5f19dda010e0b121b/releases/624ff4093f355054676f8364/img/shape-8@2x.svg);
+  background-size: 100% 100%;
+  height: 14px;
+  width: 9px;
+}
+
+.entry {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/624ff3e5f19dda010e0b121b/releases/624ff4093f355054676f8364/img/shape-9@2x.svg);
+  background-size: 100% 100%;
+  height: 11px;
+  width: 13px;
+}
+
+.pool {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/624ff3e5f19dda010e0b121b/releases/624ff4093f355054676f8364/img/shape-7@2x.svg);
+  background-size: 100% 100%;
+  height: 13px;
+  width: 13px;
+}
+
+.info-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+
+  position: static;
+  width: 100px;
+  height: 23px;
+  left: 94px;
+  top: 0px;
+
+  background: #F3F3F3;
+  border-radius: 6px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.info-frame-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+
+  position: static;
+  width: 84px;
+  height: 23px;
+  left: 2px;
+  top: 0px;
+
+  background: rgba(162, 220, 244, 0.5);
+  border-radius: 6px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.item-logo {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/624ff3e5f19dda010e0b121b/releases/624ff4093f355054676f8364/img/shape-6@2x.svg);
+  background-size: 100% 100%;
+  height: 13px;
+  width: 13px;
+}
+
+.prize-image {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.underline{
+  width: 875px !important;
+  height: 1px;
+  margin: 16px auto;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media (max-width:1100px) and (min-width:950px) {
+//   .dash-container{
+//   width: 800px; 
+// }
+}
+
+@media (max-width:949px) and (min-width:750px) {
+  .dash-container{
+  width: 750px; 
+}
+}

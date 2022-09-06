@@ -1,0 +1,47 @@
+.add-network{
+    display: flex;
+}
+
+.add-container{
+    margin: 50px auto;
+    width: 80%;
+    padding: 0 50px;
+    border-radius: 24px;   
+}
+
+.add-btn{
+    display: block;
+    margin:50px auto auto;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    width: 150px;
+    background-color: rgb(253,200,134);
+}
+
+.cont-network{
+    background-color: rgb(245,242,233);
+    /* height: 150px; */
+    width: 80%;
+    padding: 25px 50px;
+    border-radius: 24px;
+    margin: auto;
+}
+@media (min-width:325px) and (max-width:750px) {
+    .cont-network{
+        width: 100%;
+    }
+    .add-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (min-width:325px) and (max-width:750px) {
+    .add-network{
+        display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: self-start;
+    }
+  
+}

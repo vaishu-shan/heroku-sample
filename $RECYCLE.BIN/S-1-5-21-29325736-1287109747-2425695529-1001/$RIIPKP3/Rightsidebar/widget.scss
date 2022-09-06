@@ -1,0 +1,24 @@
+.right-sidebar{
+    width: 276px;
+    height: 100vh;
+    top: 0;
+    background-color: rgb(32, 42, 48, 0.4);
+    padding: 25px;
+    z-index: 1000;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; 
+}
+.trending-coin{
+    width: 216px;
+    background-color: rgb(32, 42, 48);
+border-radius: 24px;
+padding: 20px;
+}
+
+
+@media (max-width:1440px) and (min-width:300px){
+  .right-sidebar{
+    display: none;
+  }
+}

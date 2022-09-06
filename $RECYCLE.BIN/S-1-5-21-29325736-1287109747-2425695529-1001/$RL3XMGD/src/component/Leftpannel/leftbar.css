@@ -1,0 +1,218 @@
+.overall{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+.left-sidebar{
+  height: 100vh;
+  /* background-color: rgb(253,200,134,0.5); */
+  padding:0 5px 0;
+  z-index: 99;
+  border-right: 1px solid #e5e5e5;
+}
+.left-sidebar-expanded {
+  width: 276px;
+  height: 100vh;
+  background-color: #fff;
+  padding:0 25px 0;
+  z-index: 99;
+  border-right: 1px solid #e5e5e5;
+}
+.left-sidebar-expanded.active{
+  left: 0;
+}
+.profile {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+}
+.view-profile {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 16px;
+}
+.metaverse-avatar {
+  margin-top: 12px;
+}
+.routes {
+  margin: 85px auto;
+}
+.logout {
+  width: 75%;
+}
+.logout button {
+  height: 54px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.side-card {
+  padding: 10px;
+
+  border-radius: 12px;
+  margin: 0 0 10px;
+
+  cursor: pointer;
+}
+.lb-icon {
+  object-fit: none;
+  margin: auto 5px;
+}
+
+.side-card span {
+  left: 50%;
+  top: 65%;
+  width: 100%;
+  color: #7f8a94;
+
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.side-card .select {
+  background: rgba(161, 154, 254, 0.5);
+  stroke: #fff;
+}
+.select span {
+  color: white;
+}
+
+.notify-title {
+  font-family: "Open Sans", sans-serif;
+  line-height: 54px;
+  color: #7f8a94;
+}
+
+.disconnect_container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 299.3px;
+  height: 70px;
+  padding: 10px 30px;
+  background: white;
+}
+.disconnect_button {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background: transparent;
+  border: solid 1px rgba(87, 97, 112, 0.48);
+}
+
+.disconnect_button:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: green;
+  border-radius: 50%;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reserved{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 25px;
+}
+.log-out-btn{
+  position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: -20px;
+}
+.route-connect-wallet{
+  width: 90%;
+  position: absolute;
+  bottom: 90px;
+  right: 10px;
+}
+
+@media (max-width: 1100px) and (min-width: 750px) {
+  .left-sidebar-expanded {
+    width: 55px;
+  }
+  .view-profile,
+  .lb-text,
+  .metaverse-avatar,
+  .avatar-button {
+    display: none;
+  }
+  .side-card {
+    width: auto !important;
+  }
+  .routes {
+    margin-top: 100px !important;
+  }
+  .coin-sec {
+    margin-top: 50px !important;
+  }
+  .log-out-btn{
+    display: none !important;
+  }
+  .log-out-btn2{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: -20px;
+  }
+  .tab-logout{
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width:1101px) {
+  .log-out-btn2{
+    display: none;
+  }
+}
+@media (min-width:751px) and (max-width:2000px)  {
+  .hamburger{
+    display: none;
+  }
+  .nav-menu{
+    display: none;
+  } 
+}
+
+@media (min-width:325px) and (max-width:750px) {
+  .log-out-btn2{
+    display: none;
+  }
+  .left-sidebar-expanded{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+    margin: 20px 0 0 30px;
+    z-index: 99999;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;    
+    flex-direction: column;
+    background-color: rgb(236,230,210);
+    height: 100vh;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    padding-left: 0;
+    z-index: 999;
+  }
+}

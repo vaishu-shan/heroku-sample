@@ -1,0 +1,13 @@
+.add-client{
+    display: flex;
+}
+
+@media (min-width:325px) and (max-width:750px) {
+    .add-client{
+        display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: self-start;
+    }
+  
+}

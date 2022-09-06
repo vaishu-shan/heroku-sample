@@ -1,0 +1,242 @@
+.pages {
+  color: #316685;
+  text-align: center;
+  font-size: calc(1.5rem + 2vw);
+  margin-top: 10%; 
+}
+.text-red{
+  color: red;
+}
+.navbar-nav {
+  /* background-color: #1f5156; */
+  background: rgb(37, 47, 90);
+  /* height: 80px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.main-container{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,0,0.3);
+}
+
+.nav-logo {
+  color: red !important;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  /* flex-grow: 1; */
+  font-style: 700;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 0.9rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.nav-item.active {
+  color: #ffdd40;
+  border: 1px solid #ffdd40;
+}
+
+.nav-icon {
+  display: none;
+}
+
+a:hover{
+  color: red !important;
+}
+ul{
+  margin-bottom: 0 !important;
+}
+.chain-dropdown{
+  background: none;
+    border: 2px solid #fff;
+    border-radius: 55px;
+    height: 40px;
+    color: #fff;
+}
+.backndlogo{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.section-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.section-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.connect-wallet-btn{
+  padding: 0 15px;
+}
+.chain-btn{
+  width: 170px;
+  height: 45px;
+    /* padding: 10px 12px; */
+    border-radius: 25px;
+  border: none;
+  background: #070b28;
+}
+.dropdown-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.ant-dropdown-menu{
+  background: rgb(37, 47, 90)  !important;
+  top: 8px !important;
+  border-radius: 14px !important;
+}
+
+.ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover, .ant-dropdown-menu-item.ant-dropdown-menu-item-active, .ant-dropdown-menu-item.ant-dropdown-menu-submenu-title-active, .ant-dropdown-menu-submenu-title.ant-dropdown-menu-item-active, .ant-dropdown-menu-submenu-title.ant-dropdown-menu-submenu-title-active{
+  background-color:#070b28 !important ;
+
+}
+a, area, button, [role='button'], input:not([type='range']), label, select, summary, textarea{
+  color: #fff !important;
+}
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+  color: #fff !important;
+}
+/* --------- */
+@media screen and (min-width:951px) {
+   .mob-footer{
+   display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background: rgb(37, 47, 90);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: red;
+    border: none;
+  }
+  .nav-links {
+    padding: 0.5rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -30px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffdd40;
+  }
+  .connect-wallet-btn,.info-dot{
+ display: none;
+  }
+  .chain-btn{
+    margin-right: 38px; 
+  }
+ 
+}
+@media (min-width:350px) and (max-width:950px) {
+  .mob-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(37, 47, 90);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 999999 ;
+    padding: 15px 0;
+  }
+  .connect-wallet-mob{
+    padding: 0 20px;
+  }
+}
+@media (min-width:350px) and (max-width:500px) {
+  .chain-btn{
+    width: 75px;
+   }
+  .ant-dropdown-link{
+    display: none;
+  }
+  .info-dot{
+    margin: auto;
+  }
+}

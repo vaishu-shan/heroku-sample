@@ -1,0 +1,11 @@
+.swiper-container{
+    margin: 20px auto 40px;
+    height: 300px;
+}
+.swiper-wrapper{
+    height: 89% !important;
+
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -4px;
+}
